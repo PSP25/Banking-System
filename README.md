@@ -34,17 +34,18 @@ This project is a simple banking system built using **C++** with an object-orien
    ```bash
    git clone https://github.com/PSP25/Banking-System.git
 
-	2.	Compile the project using a C++ compiler:
-
-g++ banking_system.cpp -o banking_system
-
-
-	3.	Run the executable:
-
-./banking_system
+2. **Compile the project using a C++ compiler**:
+   ```bash
+	g++ banking_system.cpp -o banking_system
 
 
-	4.	Follow the on-screen instructions to use the banking system.
+3. **Run the executable**:
+   ```bash
+	
+	./banking_system
+
+
+5. Follow the on-screen instructions to use the banking system.
 
 Sample Commands
 
@@ -65,43 +66,28 @@ Future Enhancements
 
 Code Snippet
 
-Here’s a snippet showing how file I/O is handled for account persistence:
+**Here’s a snippet showing how file I/O is handled for account persistence**:
 
-ofstream & operator<<(ofstream &ofs, Account &acc) {
-    ofs << acc.accountNumber << endl;
-    ofs << acc.firstName << endl;
-    ofs << acc.lastName << endl;
-    ofs << acc.balance << endl;
-    return ofs;
-}
+ 	ofstream & operator<<(ofstream &ofs, Account &acc) {
+	    ofs << acc.accountNumber << endl;
+	    ofs << acc.firstName << endl;
+	    ofs << acc.lastName << endl;
+	    ofs << acc.balance << endl;
+	    return ofs;
+	}
 
-ifstream & operator>>(ifstream &ifs, Account &acc) {
-    ifs >> acc.accountNumber;
-    ifs >> acc.firstName;
-    ifs >> acc.lastName;
-    ifs >> acc.balance;
-    return ifs;
-}
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+	ifstream & operator>>(ifstream &ifs, Account &acc) {
+	    ifs >> acc.accountNumber;
+	    ifs >> acc.firstName;
+	    ifs >> acc.lastName;
+	    ifs >> acc.balance;
+	    return ifs;
+	}
 
 Contact
 
 If you have any questions or feedback, feel free to reach out:
 
-	•	Email: your-email@example.com
-	•	LinkedIn: Your LinkedIn Profile
+	•	Email: priyanshupanda2019@gmail.com
+	•	LinkedIn: https://www.linkedin.com/in/priyanshusp/
 
-### Key points covered in the `README.md`:
-- **Project Overview**: Brief introduction to what the project does.
-- **Features**: Core functionality available in the banking system.
-- **Tech Stack & Concepts**: Technologies and key concepts used in the project.
-- **System Design**: Explanation of the system architecture.
-- **How to Run**: Instructions on how to compile and run the project locally.
-- **Future Enhancements**: Suggestions for how the project can be improved.
-- **Code Snippet**: An example showcasing a part of the code.
-- **Contact**: Your email and LinkedIn for any follow-up.
-
-Feel free to replace the placeholders with your actual information and upload this `README.md` to your GitHub repository!
