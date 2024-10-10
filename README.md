@@ -32,8 +32,7 @@ This project is a simple banking system built using **C++** with an object-orien
 ## How to Run the Project
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/banking-system.git
-   cd banking-system
+   git clone https://github.com/PSP25/Banking-System.git
 
 	2.	Compile the project using a C++ compiler:
 
