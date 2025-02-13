@@ -213,7 +213,12 @@ Account Bank::OpenAccount(string fname, string lname, float balance) {
 }
 
 Account Bank::BalanceEnquiry(long accountNumber) {
-    return accounts.find(accountNumber)->second;
+    auto it = accounts.find(accountNumber);
+if (it == accounts.end()) {
+    cout << "Error: Account not found!" << endl;
+    return Account(); // Return a default empty account
+}
+return it->second;
 }
 
 Account Bank::Deposit(long accountNumber, float amount) {
